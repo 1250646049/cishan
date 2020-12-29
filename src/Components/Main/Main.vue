@@ -9,7 +9,7 @@
     </div>
     <!-- 收起 -->
     <el-menu
-      :default-active="currentIndex"
+      :default-active="!currentIndex?'welcome':currentIndex"
       class="el-menu-vertical-demo"
       background-color="#545c64"
       text-color="#fff"
@@ -31,7 +31,7 @@
       </el-submenu>
    <el-submenu index="2">
           <template slot="title"> <i class="el-icon-menu"></i><span>受助者数据库</span></template>
-          <el-menu-item index="2-1-1">受助者信息预览</el-menu-item>
+          <el-menu-item index="need" >受助者信息预览</el-menu-item>
     </el-submenu>
 
        <el-submenu index="3">
@@ -42,7 +42,7 @@
 
            <el-submenu index="4" >
           <template slot="title"> <i class="el-icon-menu"></i><span>信息发布</span></template>
-          <el-menu-item  index="4-1-1">管理公告</el-menu-item>
+          <el-menu-item   index="4-1-1">管理公告</el-menu-item>
            <el-menu-item index="4-1-2">公布进度</el-menu-item>
           <el-menu-item index="4-1-3">发布捐助</el-menu-item>
     </el-submenu>
@@ -51,7 +51,7 @@
   </el-aside>
   <el-container>
     <el-header>
-      <h1>浩德慈善管理后台系统</h1>
+      <h1>中华浩德慈善基金会管理后台系统</h1>
       <div class="login">
           <span class="message">欢迎您：<span class="name">  
                <el-dropdown trigger="click">
@@ -170,4 +170,7 @@ mounted() {
           overflow hidden
           background #F1EFF2
 
+  .el-menu-item 
+    padding-left 60px !important 
+    box-sizing border-box !important
 </style>

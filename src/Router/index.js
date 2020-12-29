@@ -6,10 +6,12 @@ import Router from './router'
 Vue.use(VueRouter)
 
 
- export default new VueRouter({
+export default new VueRouter({
     mode:'history',
     routes:Router
 
 
 
  })
+
+

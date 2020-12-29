@@ -93,10 +93,7 @@ export default {
             if(this.Login.password===this.Login.reptpass){
                 // 登陆成功
                 // 跳转
-                this.$router.replace({
-                    name:"main",
-
-                })
+                this.$router.replace("/admin/main")
                 return this.$message.success("恭喜你，登陆成功！")
 
             }
